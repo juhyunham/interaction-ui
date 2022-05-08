@@ -1,0 +1,44 @@
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+  float: left;
+  margin: 50px;
+}
+
+article {
+  width: 100%;
+  height: 100%;
+  background: blue;
+  opacity: 0.3;
+}
+
+section:nth-of-type(1) article {
+  transform: scale(0.8);
+}
+
+section:nth-of-type(2) article {
+  transform: skewX(20deg);
+}
+
+section:nth-of-type(3) {
+  transform: translateX(20px);
+}
+
+/* 부모 기준으로 자식도 움직임을 알 수 있다. */
+section:nth-of-type(3) article {
+  transform: translateY(50%);
+}
+
+section:nth-of-type(4) article {
+  transform: rotate(45deg);
+}
