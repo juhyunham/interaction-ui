@@ -13,6 +13,7 @@ section {
   border: 1px solid #000;
   float: left;
   margin: 50px;
+  perspective: 400px;
 }
 
 article {
@@ -23,22 +24,9 @@ article {
 }
 
 section:nth-of-type(1) article {
-  transform: scale(0.8);
+  transform: rotateX(45deg);
 }
 
 section:nth-of-type(2) article {
-  transform: skewX(20deg);
-}
-
-section:nth-of-type(3) {
-  transform: translateX(20px);
-}
-
-/* 부모 기준으로 자식도 움직임을 알 수 있다. */
-section:nth-of-type(3) article {
-  transform: translateY(50%);
-}
-
-section:nth-of-type(4) article {
-  transform: rotate(45deg);
+  transform: rotateY(45deg);
 }
