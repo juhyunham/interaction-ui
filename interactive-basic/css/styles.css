@@ -30,3 +30,11 @@ section:nth-of-type(1) article {
 section:nth-of-type(2) article {
   transform: rotateY(45deg);
 }
+
+section:nth-of-type(3) article {
+  transform: translateZ(-150px);
+}
+
+section:nth-of-type(4) article {
+  transform: translateZ(150px);
+}
